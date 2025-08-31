@@ -1,6 +1,6 @@
 import Foundation
 
-class ToDoItem {
+class ToDoItem: Encodable {
     var title: String = ""
     var isDone: Bool = false
 }
