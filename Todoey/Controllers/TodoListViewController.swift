@@ -40,7 +40,7 @@ class TodoListViewController: SwipeTableViewController {
         
         guard let item = toDoItems?[indexPath.row] else { return cell }
         
-        cell.backgroundColor = UIColor(.blue).darken(byPercentage: CGFloat(indexPath.row) / CGFloat(toDoItems?.count ?? 1))
+        cell.backgroundColor = UIColor(hexString: selectedCategory!.color)?.darken(byPercentage: CGFloat(indexPath.row) / CGFloat(toDoItems?.count ?? 1))
         
         if #available(iOS 14.0, *) {
             var content = cell.defaultContentConfiguration()
@@ -62,7 +62,6 @@ class TodoListViewController: SwipeTableViewController {
         if let item = toDoItems?[indexPath.row] {
             do {
                 try realm.write {
-//                    realm.delete(item)
                     item.done = !item.done
                 }
             } catch {
@@ -108,16 +107,16 @@ class TodoListViewController: SwipeTableViewController {
     
     //MARK: - Model Manupulation Methods
     
-        func saveItems(item: Item) {
-            do {
-                try realm.write() {
-                    realm.add(item)
-                }
-            } catch {
-                print("Error saving context, \(error)")
+    func saveItems(item: Item) {
+        do {
+            try realm.write() {
+                realm.add(item)
             }
-            tableView.reloadData()
+        } catch {
+            print("Error saving context, \(error)")
         }
+        tableView.reloadData()
+    }
     
     func loadItems() {
         toDoItems = selectedCategory?.items.sorted(byKeyPath: "title", ascending: true)
@@ -142,16 +141,16 @@ class TodoListViewController: SwipeTableViewController {
 
 //MARK: - Search Bar Methods
 extension TodoListViewController: UISearchBarDelegate {
-
+    
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         toDoItems = toDoItems?.filter("title CONTAINS[cd] %@", searchBar.text!).sorted(byKeyPath: "dateCreated", ascending: true)
         tableView.reloadData()
     }
-
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         if searchBar.text?.count == 0 {
             loadItems()
-
+            
             DispatchQueue.main.async {
                 searchBar.resignFirstResponder()
             }
