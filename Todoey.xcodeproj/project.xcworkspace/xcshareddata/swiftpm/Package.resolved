@@ -1,6 +1,15 @@
 {
-  "originHash" : "2174eaf93f622d57be865cd78b51b72620c12528f1f0957292620977c4d69891",
+  "originHash" : "ae186d1afbaccc137cd47cc49ca8e4882c052a63eae3043346933e1ea38ba6ef",
   "pins" : [
+    {
+      "identity" : "chameleonframework",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/starkdmi/ChameleonFramework",
+      "state" : {
+        "branch" : "main",
+        "revision" : "71b36b0dbbd09b923c9e948b73d2492ea6097a68"
+      }
+    },
     {
       "identity" : "realm-core",
       "kind" : "remoteSourceControl",
@@ -17,6 +26,15 @@
       "state" : {
         "branch" : "master",
         "revision" : "5fcba6408c99eb3596bf5ae148bfc1a33b5adebd"
+      }
+    },
+    {
+      "identity" : "swipecellkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SwipeCellKit/SwipeCellKit",
+      "state" : {
+        "revision" : "7219cad3098637176ace311510d11467dbfb9bb0",
+        "version" : "2.7.1"
       }
     }
   ],

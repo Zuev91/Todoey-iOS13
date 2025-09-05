@@ -3,18 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		6E5E1A542E69F574002EC6DC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5E1A532E69F574002EC6DC /* RealmSwift */; };
+		6E5E1A5F2E6AEA3E002EC6DC /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5E1A5E2E6AEA3E002EC6DC /* SwipeCellKit */; };
+		6E5E1AB32E6B369D002EC6DC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5E1AB22E6B369D002EC6DC /* RealmSwift */; };
+		6E5E1AC62E6B3733002EC6DC /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5E1AC52E6B3733002EC6DC /* RealmSwift */; };
+		6E5E1AC92E6B374B002EC6DC /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5E1AC82E6B374B002EC6DC /* SwipeCellKit */; };
+		6E5E1ACC2E6B37CD002EC6DC /* Chameleon in Frameworks */ = {isa = PBXBuildFile; productRef = 6E5E1ACB2E6B37CD002EC6DC /* Chameleon */; };
 		EB2BE4FA239524DB00FB933B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB2BE4F9239524DB00FB933B /* AppDelegate.swift */; };
 		EB2BE503239524DC00FB933B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB2BE502239524DC00FB933B /* Assets.xcassets */; };
 		EB2BE506239524DC00FB933B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB2BE504239524DC00FB933B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6EB80F732E6B3EE800C4139B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		EB2BE4F6239524DB00FB933B /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todoey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6E76C32D2E6B4AF700E7570E /* Todoey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = Todoey.app; path = "/Users/aliaksandrzuyeu/Documents/Self-Study/DevRush/Dr. Angela Yu Course/Todoey-iOS13/build/Debug-iphoneos/Todoey.app"; sourceTree = "<absolute>"; };
 		EB2BE4F9239524DB00FB933B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EB2BE502239524DC00FB933B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB2BE505239524DC00FB933B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -22,9 +40,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		6E5E1A082E64E14E002EC6DC /* Data Model */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "Data Model"; sourceTree = "<group>"; };
-		6E5E1A0A2E64E16E002EC6DC /* Views */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Views; sourceTree = "<group>"; };
-		6E5E1A0B2E64E19F002EC6DC /* Controllers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Controllers; sourceTree = "<group>"; };
+		6E5E1A082E64E14E002EC6DC /* Data Model */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
+		6E5E1A0A2E64E16E002EC6DC /* Views */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Views;
+			sourceTree = "<group>";
+		};
+		6E5E1A0B2E64E19F002EC6DC /* Controllers */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +62,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E5E1ACC2E6B37CD002EC6DC /* Chameleon in Frameworks */,
+				6E5E1AB32E6B369D002EC6DC /* RealmSwift in Frameworks */,
+				6E5E1A5F2E6AEA3E002EC6DC /* SwipeCellKit in Frameworks */,
+				6E5E1AC62E6B3733002EC6DC /* RealmSwift in Frameworks */,
+				6E5E1AC92E6B374B002EC6DC /* SwipeCellKit in Frameworks */,
 				6E5E1A542E69F574002EC6DC /* RealmSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,16 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				EB2BE4F8239524DB00FB933B /* Todoey */,
-				EB2BE4F7239524DB00FB933B /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		EB2BE4F7239524DB00FB933B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				EB2BE4F6239524DB00FB933B /* Todoey.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		EB2BE4F8239524DB00FB933B /* Todoey */ = {
@@ -87,6 +113,7 @@
 				EB2BE4F2239524DB00FB933B /* Sources */,
 				EB2BE4F3239524DB00FB933B /* Frameworks */,
 				EB2BE4F4239524DB00FB933B /* Resources */,
+				6EB80F732E6B3EE800C4139B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -99,7 +126,7 @@
 			);
 			name = Todoey;
 			productName = Todoey;
-			productReference = EB2BE4F6239524DB00FB933B /* Todoey.app */;
+			productReference = 6E76C32D2E6B4AF700E7570E /* Todoey.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -119,7 +146,6 @@
 				};
 			};
 			buildConfigurationList = EB2BE4F1239524DB00FB933B /* Build configuration list for PBXProject "Todoey" */;
-			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -128,9 +154,12 @@
 			);
 			mainGroup = EB2BE4ED239524DB00FB933B;
 			packageReferences = (
-				6E5E1A502E69F574002EC6DC /* XCRemoteSwiftPackageReference "realm-swift" */,
+				6E5E1AC22E6B3733002EC6DC /* XCRemoteSwiftPackageReference "realm-swift" */,
+				6E5E1AC72E6B374B002EC6DC /* XCRemoteSwiftPackageReference "SwipeCellKit" */,
+				6E5E1ACA2E6B37CD002EC6DC /* XCRemoteSwiftPackageReference "ChameleonFramework" */,
 			);
-			productRefGroup = EB2BE4F7239524DB00FB933B /* Products */;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = EB2BE4ED239524DB00FB933B;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -298,7 +327,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Todoey/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +345,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Todoey/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -360,6 +389,38 @@
 				kind = branch;
 			};
 		};
+		6E5E1A5D2E6AEA3E002EC6DC /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		6E5E1AC22E6B3733002EC6DC /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		6E5E1AC72E6B374B002EC6DC /* XCRemoteSwiftPackageReference "SwipeCellKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwipeCellKit/SwipeCellKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		6E5E1ACA2E6B37CD002EC6DC /* XCRemoteSwiftPackageReference "ChameleonFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/starkdmi/ChameleonFramework";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -367,6 +428,31 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 6E5E1A502E69F574002EC6DC /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
+		};
+		6E5E1A5E2E6AEA3E002EC6DC /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E5E1A5D2E6AEA3E002EC6DC /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
+		};
+		6E5E1AB22E6B369D002EC6DC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E5E1A502E69F574002EC6DC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		6E5E1AC52E6B3733002EC6DC /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E5E1AC22E6B3733002EC6DC /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+		6E5E1AC82E6B374B002EC6DC /* SwipeCellKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E5E1AC72E6B374B002EC6DC /* XCRemoteSwiftPackageReference "SwipeCellKit" */;
+			productName = SwipeCellKit;
+		};
+		6E5E1ACB2E6B37CD002EC6DC /* Chameleon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6E5E1ACA2E6B37CD002EC6DC /* XCRemoteSwiftPackageReference "ChameleonFramework" */;
+			productName = Chameleon;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
