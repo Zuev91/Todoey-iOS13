@@ -16,6 +16,7 @@ class TodoListViewController: SwipeTableViewController {
     lazy var realm: Realm = {
         return try! Realm()
     }()
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var toDoItems: Results<Item>?
     
@@ -28,6 +29,18 @@ class TodoListViewController: SwipeTableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if let colourHex = selectedCategory?.color {
+            
+            title = selectedCategory!.name
+            guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller doesn't exist.")}
+            navBar.backgroundColor = UIColor(hexString: colourHex)
+            searchBar.tintColor = UIColor(hexString: colourHex)
+            navBar.largeTitleTextAttributes = [.foregroundColor: UIColor(contrastingBlackOrWhiteColorOn: navBar.backgroundColor!, isFlat: true)]
+            navBar.tintColor = UIColor(contrastingBlackOrWhiteColorOn: navBar.backgroundColor!, isFlat: true)
+        }
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
